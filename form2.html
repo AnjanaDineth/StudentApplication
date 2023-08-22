@@ -77,8 +77,9 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(() => {  location.replace("./thank.html"); })
-            .catch(error => console.error('Error!', error.message))
+		.then(() => {  location.replace("./thank.html"); })
+                .catch(error => console.error('Error!', error.message))
+            
         })
       </script>
     <br>
